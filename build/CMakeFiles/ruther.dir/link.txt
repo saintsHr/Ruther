@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/ruther.dir/link.d CMakeFiles/ruther.dir/src/main.cpp.o -o ruther  /usr/lib/libraylib.so.6.2.0 -lm

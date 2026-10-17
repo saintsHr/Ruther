@@ -1,0 +1,3 @@
+/home/henrique/Desktop/Projects/Ruther/build/CMakeFiles/ruther.dir
+/home/henrique/Desktop/Projects/Ruther/build/CMakeFiles/edit_cache.dir
+/home/henrique/Desktop/Projects/Ruther/build/CMakeFiles/rebuild_cache.dir

@@ -10,8 +10,9 @@ project(Ruther
 find_package(raylib REQUIRED)
 
 set(SOURCES
-    src/main.cpp
-    src/ruther/renderer.cpp
+    src/ruther/main.cpp
+    src/ruther/renderer/renderer.cpp
+    src/ruther/particle/particle.cpp
 )
 
 add_executable(ruther ${SOURCES})

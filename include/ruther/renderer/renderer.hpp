@@ -3,8 +3,8 @@
 #include <raylib.h>
 #include <string>
 
-#include "ruther/color.hpp"
-#include "ruther/vector.hpp"
+#include "ruther/utils/color.hpp"
+#include "ruther/utils/vector.hpp"
 
 namespace Ruther::Renderer {
 

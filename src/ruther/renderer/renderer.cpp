@@ -1,4 +1,4 @@
-#include "ruther/renderer.hpp"
+#include "ruther/renderer/renderer.hpp"
 #include <algorithm>
 #include <raylib.h>
 

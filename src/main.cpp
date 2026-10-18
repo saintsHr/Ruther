@@ -8,13 +8,16 @@ constexpr Ruther::Vec2 WINDOW_SIZE = {800.0f, 600.0f};
 constexpr int WINDOW_FPS = 60;
 
 int main() {
-    Ruther::createWindow(WINDOW_SIZE, WINDOW_NAME, WINDOW_FPS);
+    Ruther::Renderer::createWindow(WINDOW_SIZE, WINDOW_NAME, WINDOW_FPS);
 
-    while (!Ruther::windowShouldClose()) {
-        Ruther::beginFrame();
-        Ruther::endFrame();
+    while (!Ruther::Renderer::windowShouldClose()) {
+        Ruther::Renderer::beginFrame();
+
+
+
+        Ruther::Renderer::endFrame();
     }
 
-    Ruther::destroyWindow();
+    Ruther::Renderer::destroyWindow();
     return 0;
 }

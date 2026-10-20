@@ -1,4 +1,6 @@
-#include "ruther/particle/particle.hpp"
+#include "ruther/particle/electron.hpp"
+#include "ruther/particle/neutron.hpp"
+#include "ruther/particle/proton.hpp"
 #include "ruther/renderer/renderer.hpp"
 #include "ruther/input/input.hpp"
 #include "ruther/simulation/simulation.hpp"
@@ -33,12 +35,24 @@ int main() {
 
 static void handleInput(Ruther::Simulation *simulation) {
     if (Ruther::Input::isKeyPressed(Ruther::Input::Key::KEY_ONE)) {
+        auto proton = std::make_unique<Ruther::Proton>();
 
+        proton->position = Ruther::Input::getMousePosition();
+
+        simulation->addParticle(std::move(proton));
     }
     if (Ruther::Input::isKeyPressed(Ruther::Input::Key::KEY_TWO)) {
+        auto neutron = std::make_unique<Ruther::Neutron>();
 
+        neutron->position = Ruther::Input::getMousePosition();
+
+        simulation->addParticle(std::move(neutron));
     }
     if (Ruther::Input::isKeyPressed(Ruther::Input::Key::KEY_THREE)) {
+        auto electron = std::make_unique<Ruther::Electron>();
 
+        electron->position = Ruther::Input::getMousePosition();
+
+        simulation->addParticle(std::move(electron));
     }
 }

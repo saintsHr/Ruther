@@ -2,6 +2,8 @@
 #include <algorithm>
 #include <raylib.h>
 
+constexpr double RENDER_SCALE = 1.0 / 1e16;
+
 namespace Ruther::Renderer {
 
 void createWindow(Vec2 size, const std::string name, int fps) {
@@ -27,6 +29,8 @@ void endFrame(void) {
 }
 
 void drawCircle(Vec2 position, double radius, Ruther::Color color) {
+    radius /= RENDER_SCALE;
+
     DrawCircleV(
         (Vector2){
             static_cast<float>(position.x),

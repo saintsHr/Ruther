@@ -9,9 +9,18 @@ constexpr uint64_t INVALID_ID = UINT64_MAX;
 
 namespace Ruther {
 
+enum class ParticleType {
+    NONE,
+
+    NEUTRON,
+    PROTON,
+    ELECTRON
+};
+
 class Particle {
 public:
     uint64_t id = INVALID_ID;
+    ParticleType type = ParticleType::NONE;
 
     Vec2 position = {0.0, 0.0};
     Vec2 velocity = {0.0, 0.0};

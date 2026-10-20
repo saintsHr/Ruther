@@ -13,6 +13,7 @@ set(SOURCES
     src/ruther/main.cpp
     src/ruther/renderer/renderer.cpp
     src/ruther/particle/particle.cpp
+    src/ruther/input/input.cpp
 )
 
 add_executable(ruther ${SOURCES})

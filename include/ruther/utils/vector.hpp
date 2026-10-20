@@ -4,8 +4,8 @@ namespace Ruther {
 
 class Vec2 {
 public:
-    float x;
-    float y;
+    double x;
+    double y;
 
 protected:
 

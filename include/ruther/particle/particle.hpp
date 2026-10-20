@@ -21,7 +21,7 @@ public:
     double charge = 0.0;
 
     double radius = 0.0;
-    Color color = {0.0, 0.0};
+    Color color = {0.0, 0.0, 0.0};
 
     bool active = true;
 

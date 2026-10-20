@@ -15,6 +15,6 @@ bool windowShouldClose(void);
 void beginFrame(void);
 void endFrame(void);
 
-void drawCircle(Vec2 position, float radius, Ruther::Color);
+void drawCircle(Vec2 position, double radius, Ruther::Color);
 
 }

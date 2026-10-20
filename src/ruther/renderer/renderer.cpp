@@ -26,10 +26,12 @@ void endFrame(void) {
     EndDrawing();
 }
 
-void drawCircle(Vec2 position, float radius, Ruther::Color color) {
+void drawCircle(Vec2 position, double radius, Ruther::Color color) {
     DrawCircleV(
-        (Vector2){position.x, position.y}, radius,
-        ::Color{
+        (Vector2){
+            static_cast<float>(position.x),
+            static_cast<float>(position.y)
+        }, radius, ::Color{
             std::clamp<unsigned char>(255.0f * color.r, 0, 255),
             std::clamp<unsigned char>(255.0f * color.g, 0, 255),
             std::clamp<unsigned char>(255.0f * color.b, 0, 255),

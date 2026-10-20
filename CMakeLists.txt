@@ -14,6 +14,7 @@ set(SOURCES
     src/ruther/renderer/renderer.cpp
     src/ruther/particle/particle.cpp
     src/ruther/input/input.cpp
+    src/ruther/simulation/simulation.cpp
 )
 
 add_executable(ruther ${SOURCES})
